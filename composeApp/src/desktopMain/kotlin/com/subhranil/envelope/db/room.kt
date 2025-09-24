@@ -20,7 +20,8 @@ abstract class AppDatabase : RoomDatabase() {
 
 
 fun getDatabaseBuilder(): RoomDatabase.Builder<AppDatabase> {
-    val dbFile = File(System.getProperty("java.io.tmpdir"), "GenEnv.db")
+    val appDataPath = System.getenv("APPDATA")
+    val dbFile = File(appDataPath, "GenEnvelope/GenEnv.db")
     return Room.databaseBuilder<AppDatabase>(
         name = dbFile.absolutePath,
     )

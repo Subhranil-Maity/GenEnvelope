@@ -46,7 +46,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "GenEnvelope"
-            packageVersion = "1.0.0"
+            packageVersion = "2.0.0"
             windows{
                 iconFile.set(project.file("src/desktopMain/composeResources/drawable/icon.ico"))
                 shortcut = true

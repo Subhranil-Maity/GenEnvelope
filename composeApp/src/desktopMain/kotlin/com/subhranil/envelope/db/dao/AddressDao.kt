@@ -15,6 +15,8 @@ interface AddressDao {
     @Query("select * from Address")
     fun getAll(): Flow<List<AddressEntity>>
 
+    @Query("DELETE FROM address WHERE name = :name")
+    suspend fun deleteByName(name: String)
 //    @Query("SELECT * FROM address WHERE street LIKE '%' || :searchString || '%'")
 //    fun search(searchString: String): List<Address>
 }

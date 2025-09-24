@@ -16,3 +16,9 @@ captures
 !*.xcodeproj/project.xcworkspace/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
+
+*.db
+*.db.lck
+*.db-shm
+*.db-wal
+/composeApp/GenEnv.db.lck

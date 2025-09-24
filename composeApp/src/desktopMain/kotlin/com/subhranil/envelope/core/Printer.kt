@@ -39,8 +39,8 @@ fun printer(
             g2d.drawString(line, x, y)
         }
 
-        // Recipient Address (center-ish)
         g2d.font = recipientFont
+        g2d.drawString("TO", config.recipientX, config.recipientY - config.recipientLineSpacing)
         recipientAddress.forEachIndexed { index, line ->
             val x = config.recipientX
             val y = config.recipientY + (index * config.recipientLineSpacing)
